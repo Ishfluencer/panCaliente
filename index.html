@@ -55,6 +55,7 @@
         ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam esse. Quas praesentium id magni dicta
         explicabo maxime aperiam, dolores a rem quidem odio. Expedita iure quam doloribus quis optio.</p>
       <a href="#contact" class="btn red-btn">Contact</a>
+      <a href="#contact" class="btn red-btn">Order Now</a>
     </div>
     <div class="us-images">
       <div class="img1">
@@ -74,44 +75,88 @@
       <button class="lunch btn blue-btn">Lunch</button>
       <button class="regular-lunch btn blue-btn">Regular Lunch</button>
     </div>
+    <!-- Dish 1 -->
     <div class="dishes">
       <div class="dish" data-dish="breakfast">
         <img data-src="assets/eggs.jpg" alt="chocolate with eggs">
         <h2>Eggs</h2>
-        <p>Two eggs(fried, scrambled, tortilla or scrambled with tomatoes and onions), arepa, bread, cheese, and hot
-          chocolate</p>
+        <p>Two eggs(fried, scrambled, tortilla or scrambled with tomatoes and onions), arepa, bread, cheese, and hot chocolate</p>
         <div class="price">
           <p>$12</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></button>
+          <button class="open-modal" data-dish-id="1">Details</button>
+        </div>
+        <!-- Modal for Dish 1(hidden) -->
+        <div class="dish-details" id="dish-1-details" style="display: none;">
+          <h2>Eggs</h2>
+          <p><strong>Ingredients:</strong> Eggs, arepa, bread, cheese, milk, chocolate, tomatoes, onions.</p>
+          <p><strong>Calories:</strong> 400-500 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains milk, gluten, and eggs. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 10-15 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Enjoy a hearty breakfast with your choice of eggs, a traditional arepa, and freshly baked bread. Complemented by a rich, hot chocolate to start your day off right.</p>
         </div>
       </div>
+      <!-- Dish 2 -->
       <div class="dish" data-dish="breakfast">
         <img data-src="assets/eggs-rice-beans.webp" alt="eggs with rice and beans">
         <h2>Heated Beans</h2>
         <p>Rice with red beans, arepa, fried egg, bread, cheese, and hot chocolate</p>
         <div class="price">
           <p>$12</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="2"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 2 -->
+        <div class="dish-details" id="dish-2-details" style="display: none;">
+          <h2>Heated Beans</h2>
+          <p><strong>Ingredients:</strong> Rice, red beans, arepa, eggs, bread, cheese, milk, chocolate.</p>
+          <p><strong>Calories:</strong> 450-550 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains milk, gluten, and eggs. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 15-20 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> A traditional dish featuring rice with red beans, perfectly fried egg, and an arepa on the side. Accompanied by freshly baked bread and rich hot chocolate for a fulfilling and comforting meal.</p>  
         </div>
       </div>
+      <!-- Dish 3 -->
       <div class="dish" data-dish="breakfast">
         <img data-src="assets/beef rib broth.jpg" alt="beef rib broth">
         <h2>Beef Rib Broth</h2>
         <p>Beef rib broth, arepa, bread, cheese, and hot chocolate </p>
         <div class="price">
           <p>$12</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="3"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 3 -->
+        <div class="dish-details" id="dish-3-details" style="display: none;">
+          <h2>Beef Rib Broth</h2>
+          <p><strong>Ingredients:</strong> Beef ribs, broth, arepa, bread, cheese, milk, chocolate.</p>
+          <p><strong>Calories:</strong> 500-600 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains milk and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 15 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Savor a hearty and flavorful beef rib broth, served with a traditional arepa and freshly baked bread. The meal is complemented by rich, hot chocolate and a side of cheese for a satisfying and comforting dining experience.</p>
         </div>
       </div>
+      <!-- Dish 4 -->
       <div class="dish" data-dish="breakfast">
         <img data-src="assets/tamal.jpeg" alt="Tamal">
         <h2>Tamal from Huila</h2>
         <p>Tamal, arepa, bread, cheese and chocolate</p>
         <div class="price">
           <p>$12</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="4">Details</button>
+        </div>
+        <!-- Modal for Dish 4(hidden) -->
+         <div class="dish-details" id="dish-4-details" style="display: none;">
+          <h2>Tamal from Huila</h2>
+          <p><strong>Ingredients:</strong> Tamal (corn dough, pork, chicken, vegetables, spices), arepa, bread, cheese, milk, chocolate.</p>
+          <p><strong>Calories:</strong> 600-700 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains pork, chicken, and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 20 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Experience the traditional flavors of Huila with a delicious tamal made from corn dough, pork, chicken, and a mix of vegetables and spices. This hearty meal is served with an arepa, freshly baked bread, cheese, and a cup of rich, hot chocolate for a truly satisfying breakfast.</p>
         </div>
       </div>
+      <!-- Dish 5 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/bandeja paisa.png" alt="Paisa platter">
         <h2>Paisa platter</h2>
@@ -119,92 +164,191 @@
           plantain</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="5"><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
-      </div>
+        <!-- Modal for Dish 5 (hidden) -->
+        <div class="dish-details" id="dish-5-details" style="display: none;">
+          <h2>Paisa platter</h2>
+          <p><strong>Ingredients:</strong> Pulled beef, chorizo (Spanish sausage), pork rind, egg, rice, red beans, arepa, avocado, ripe plantain.</p>
+          <p><strong>Calories:</strong> 900-1100 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains pork, beef, egg, and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 20-30 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> The Paisa platter is a hearty and traditional Colombian dish featuring pulled beef, chorizo, crispy pork rind, a perfectly fried egg, and a generous serving of rice and red beans. This meal is rounded out with an arepa, slices of creamy avocado, and sweet ripe plantain, offering a delightful balance of flavors and textures. Perfect for a filling and satisfying lunch.</p>
+        </div>
+      <!-- Dish 6 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/flank.jpg" alt="Flank steak">
         <h2>Flank Steak</h2>
         <p>Flank steak, rice, cooked cassava, and avocado</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="6"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 6 (hidden) -->
+        <div class="dish-details" id="dish-6-details" style="display: none;">
+          <h2>Flank Steak</h2>
+          <p><strong>Ingredients:</strong> Flank steak, rice, cooked cassava, avocado.</p>
+          <p><strong>Calories:</strong> 600-700 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains beef and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 20-25 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> A tender flank steak served with a side of rice, savory cooked cassava, and slices of creamy avocado. This dish offers a satisfying combination of flavors and textures, perfect for a wholesome lunch.</p>
         </div>
       </div>
+      <!-- Dish 7 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/hen.gif" alt="Hen Stew">
         <h2>Hen Stew</h2>
         <p>Hen, broth, rice, corn cob, potato, cooked cassava, ripe plantain, and avocado</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="7"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 7 (hidden)-->
+        <div class="dish-details" id="dish-7-details" style="display: none;">
+          <h2>Hen Stew</h2>
+          <p><strong>Ingredients:</strong> Hen, broth, rice, corn cob, potato, cooked cassava, ripe plantain, avocado.</p>
+          <p><strong>Calories:</strong> Approximately 700-800 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains poultry and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 30-40 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Dive into a comforting bowl of hen stew, simmered to perfection with a medley of vegetables including corn cob, potato, and cooked cassava. Served with ripe plantain and avocado, this hearty dish promises a satisfying dining experience.</p>
         </div>
       </div>
+      <!-- Dish 8 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/ajiaco.webp" alt="Ajiaco">
         <h2>Ajiaco</h2>
         <p>Chicken, broth, rice, corn cob, milk cream, capers, avocado, and banana</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="8"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 8 (hidden) -->
+        <div class="dish-details" id="dish-8-details" style="display: none;">
+          <h2>Ajiaco</h2>
+          <p><strong>Ingredients:</strong> Chicken, broth, rice, corn cob, milk cream, capers, avocado, banana.</p>
+          <p><strong>Calories:</strong> Approximately 600-700 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains poultry and dairy. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 40-50 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Indulge in the flavors of Colombia with Ajiaco, a hearty chicken soup featuring corn cob and potatoes, enriched with milk cream and garnished with capers, avocado, and banana. A comforting dish perfect for any occasion.</p>
         </div>
       </div>
+      <!-- Dish 9 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/chicken-with-rice.webp" alt="Chicken with rice">
         <h2>Chicken with Rice</h2>
         <p>Chicken with rice and fries</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="9"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 9 (hidden) -->
+        <div class="dish-details" id="dish-9-details" style="display: none;">
+          <h2>Chicken with Rice</h2>
+          <p><strong>Ingredients:</strong> Chicken, rice, fries.</p>
+          <p><strong>Calories:</strong> Approximately 600-700 kcal</p>
+          <p><strong>Allergen Information:</strong> Contains poultry and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 30-40 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Savor the delightful combination of tender chicken served with rice and crispy fries. A fulfilling meal that brings together flavors loved by many.</p>
         </div>
       </div>
+      <!-- Dish 10 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/grilled.jpg" alt="Grilled Meat">
         <h2>Grilled Meat</h2>
-        <p>Beef or chicken or pork, fries, and letucce salad</p>
+        <p>Beef or chicken or pork, fries, and lettuce salad</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="10"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for dish 10 (hidden) -->
+        <div class="dish-details" id="dish-10-details" style="display: none;">
+          <h2>Grilled Meat</h2>
+          <p><strong>Ingredients:</strong> Beef or chicken or pork, fries, lettuce salad.</p>
+          <p><strong>Calories:</strong> Approximately 600-800 kcal (varies based on meat type and portion)</p>
+          <p><strong>Allergen Information:</strong> Contains meat and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 20-30 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Indulge in your choice of tender grilled meat served with crispy fries and a refreshing lettuce salad. A satisfying meal that's perfect for any occasion.</p>
         </div>
       </div>
+      <!-- Dish 11 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/tilapia.webp" alt="Fried Tilapia">
         <h2>Fried Tilapia</h2>
         <p>Fried tilapia, lettuce salad, rice, and fried green plantain</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="11"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for dish 11 (hidden) -->
+        <div class="dish-details" id="dish-11-details" style="display: none;">
+          <h2>Fried Tilapia</h2>
+          <p><strong>Ingredients:</strong> Fried tilapia, lettuce salad, rice, fried green plantain.</p>
+          <p><strong>Calories:</strong> Approximately 400-600 kcal (varies based on portion)</p>
+          <p><strong>Allergen Information:</strong> Contains fish and gluten. Prepared in a kitchen that handles nuts.</p>
+          <p><strong>Prep Time:</strong> 20-25 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Enjoy a crispy and flavorful fried tilapia served with a refreshing lettuce salad, rice, and crispy fried green plantain. A delightful choice for seafood lovers.</p>
         </div>
       </div>
+      <!-- Dish 12 -->
       <div class="dish" data-dish="lunch">
         <img data-src="assets/catfish.jpg" alt="catfish">
         <h2>Catfish with Sauce</h2>
         <p>Catfish with sauce, rice, cooked cassava, and avocado</p>
         <div class="price">
           <p>$17</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="12"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for dish 12 (hidden) -->
+        <div class="dish-details" id="dish-12-details" style="display: none;">
+          <h2>Catfish with Sauce</h2>
+          <p><strong>Ingredients:</strong> Catfish, sauce, rice, cooked cassava, avocado.</p>
+          <p><strong>Calories:</strong> Approximately 400-550 kcal (varies based on portion)</p>
+          <p><strong>Allergen Information:</strong> Contains fish. Prepared in a kitchen that handles gluten and nuts.</p>
+          <p><strong>Prep Time:</strong> 25-30 minutes</p>
+          <p><strong>Serving Size:</strong> 1 person</p>
+          <p><strong>Description:</strong> Savor tender catfish fillets in a savory sauce, served with rice, cooked cassava, and creamy avocado. A delightful seafood dish rich in flavor and nutrients.</p>
         </div>
       </div>
+      <!-- Dish 13 -->
       <div class="dish" data-dish="regular-lunch">
         <img data-src="assets/regular.jpg" alt="Regular lunch">
         <h2>Regular Lunch</h2>
         <p>Rice, red beans, cooked cassava or potato, beef with veggies or stewed chicken or sweet and sour pork</p>
         <div class="price">
           <p>$12</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="13"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for Dish 13 (hidden) -->
+        <div class="dish-details" id="dish-13-details" style="display: none;">
+          <h2>Regular Lunch</h2>
+          <p></p>
         </div>
       </div>
+      <!-- Dish 14 -->
       <div class="dish" data-dish="regular-lunch">
         <img data-src="assets/spaghetti.jpg" alt="Spaghetti">
         <h2>Spaghetti</h2>
         <p>Meat or chicken spaghetti, and fries</p>
         <div class="price">
           <p>$15</p>
-          <button><i class="fa-solid fa-basket-shopping"></i></i></button>
+          <button class="open-modal" data-dish-id="14"><i class="fa-solid fa-basket-shopping"></i></button>
+        </div>
+        <!-- Modal for dish 14 (hidden) -->
+        <div class="dish-details" id="dish-14-details" style="display: none;">
+          <h2>Spaghetti</h2>
+          <p></p>
         </div>
       </div>
     </div>
   </section>
+  <!-- Bottom Banner/Order Now -->
   <div class="divider">
     <div class="divider-container container">
       <h2>Colombian Food to Start the Day</h2>
@@ -272,6 +416,12 @@
   <footer class="footer">
     <p>Copyright &copy; 2024 Boulangerie Pan Caliente</p>
   </footer>
+  <!-- Modal Box -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+    </div>
+  </div>
   <script src="js/app.js"></script>
 </body>
 </html>

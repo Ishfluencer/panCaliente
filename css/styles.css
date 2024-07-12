@@ -72,6 +72,7 @@ img {
   top: 0;
   right: 50px;
   user-select: none;
+
 }
 @media(min-width:768px){
   .full-screen {
@@ -104,6 +105,7 @@ img {
 
 .btn-close:hover {
   cursor: pointer;
+  
 }
 
 .red-btn {
@@ -247,6 +249,7 @@ h3,
   font-size: 3rem;
   margin-top: 20px;
 }
+
 
 .hamburger span {
   background-color: var(--white);
@@ -576,6 +579,63 @@ video {
   height: 20rem;
   resize: none;
 }
+
+#myModal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 30rem;
+}
+
+.full-screen {
+  display: none; /* Hide full-screen overlay by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.btn-close {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  user-select: none;
+  cursor: pointer;
+ 
+
+}
+
+.close {
+  font-size: 3rem;
+}
+
+.close:hover{
+  cursor: pointer;
+}
+
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  #myModal {
+    width: 40rem;
+    padding: 3rem;
+  }
+}
+
 
 /*footer*/
 @media(min-width:768px){
